@@ -1,6 +1,6 @@
 from setuptools import setup
 
-package_name = 'drone-gui'
+package_name = 'drone_gui'
 
 setup(
     name=package_name,
@@ -20,6 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'gui = drone_gui.gui:main',
         ],
     },
 )
